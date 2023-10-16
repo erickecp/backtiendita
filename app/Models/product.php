@@ -16,7 +16,6 @@ class product extends Model
         'stock',
         'expired',
         'image',
-        'code',
         'state',
         'category_id'
     ];
