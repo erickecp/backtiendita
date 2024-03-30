@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\SaleController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -30,4 +31,7 @@ Route::controller(CategoryController::class)->group(function () {
 Route::controller(ProductController::class)->group( function () {
     Route::post('nuevoProducto', 'newProduct');
     Route::get('productos', 'getProducts');
+});
+Route::controller(SaleController::class)->group( function () {
+    Route::post('nuevaVenta', 'newSale');
 });

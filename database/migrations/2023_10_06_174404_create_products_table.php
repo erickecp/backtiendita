@@ -17,7 +17,7 @@ return new class extends Migration
             $table->float('price');
             $table->float('price_sale');
             $table->integer('stock');
-            $table->string('expired');
+            $table->string('expired')->null();
             $table->string('image');
             $table->boolean('state')->default(true);
             $table->unsignedBigInteger('category_id');
